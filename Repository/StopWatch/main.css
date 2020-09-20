@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    height: 96vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#display{
+    display: flex;
+    height: 25vh;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 50px;
+}
+#laps{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    overflow: scroll;
+}
+button{
+    font-size: 30px;
+}

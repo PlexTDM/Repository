@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>color changer</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div id="main"></div>
+	<div class="cont">
+		<input type="text" placeholder="Add Color" id='input'>
+		<button onclick="addColor()" id="btn">Enter Color Name</button>
+	</div>
+	<script type="text/javascript">
+		var colors = ['red','blue','yellow','orange','green','purple'];
+		i = 0;
+		setInterval(colorChange, 500);
+		function colorChange(){
+			var main = document.querySelector('#main');
+			main.style.background = colors[i];
+			i++;
+			if(i == colors.length){i = 0}
+		}
+		function addColor(){
+		   var input = document.getElementById('input');
+		   colors.push(input.value);
+		}
+		document.getElementById('main').style.transition = '1s';
+	</script>
+</body>
+</html>
