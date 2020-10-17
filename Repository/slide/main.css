@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    position: relative;
+    left: 350px;
+}
+.slider{
+    position: absolute;
+    transition: right .4s;
+    transition: left .4s;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+img{
+    width: 600px;
+}
+#prevBtn{
+    position: fixed;
+    left: 0;
+    top: 48%;
+    bottom: 48%;
+}
+#nextBtn{
+    position: fixed;
+    right: 0;
+    top: 48%;
+    bottom: 48%;
+}

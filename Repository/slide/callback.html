@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>color changer</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div id="main"><div id='idc'></div>
+		<div class="container">
+			<div class="slider">
+				<img src="img1.jpg" id='img'>
+			</div>
+		</div>
+		<button id="prevBtn">previous</button>
+		<button id="nextBtn">next</button>
+	</div>
+	<script type="text/javascript">
+		let img = document.querySelector('img');
+		let i = 1;
+		let mainFunction = setInterval('increase()',2000);
+		function increase(){
+			img.src = "img"+[i]+".jpg";
+			i++;
+			if (i >= 6) {i = 1};
+		document.getElementById('img').style.transition = '1s'
+		};
+		function decrease(){
+			i--;
+			if(i<=0){i=5}
+			img.src = "img"+[i]+".jpg";
+		}
+		document.querySelector('#nextBtn').addEventListener('click', () => {
+			clearInterval(mainFunction);
+			increase();
+			mainFunction = setInterval('increase()',2000);
+		});
+		document.querySelector('#prevBtn').addEventListener('click', () => {
+			clearInterval(mainFunction);
+			decrease();
+			mainFunction = setInterval('increase()',2000);
+		});
+	</script>
+</body>
+</html>

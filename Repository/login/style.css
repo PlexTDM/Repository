@@ -1,0 +1,28 @@
+input{
+	height: 30px;
+	border-radius: 10px;
+}
+input:focus{
+	border:2px solid skyblue;
+	outline: none;
+}
+button{
+	height: 30px;
+	border:2px solid black;
+	border-radius: 3px;
+}
+.container{
+	margin: auto;
+  	width: 31%;
+  	border: 3px solid #73AD21;
+  	border-radius: 25px;
+  	padding: 10px;
+
+
+	
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
