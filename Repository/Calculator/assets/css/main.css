@@ -6,20 +6,20 @@
 	position:absolute;
 }
 .calc{
-	width:464px;
-	height:81vh;
-	font-size:30px;
+	width:45%;
+	height:50vh;
+	font-size:3vw;
 	position:relative;
 	top:10%;
 	right:30%;
 	bottom:30%;
 	left:30%;
 	background:#c80b58;
-	padding:20px;
+	padding:1%;
 }
 button{
-    width:99px;
-    height:100px;
+    width:23%;
+    height:20%;
     padding:10px;
     outline:none;
 }
@@ -27,8 +27,8 @@ button:focus {
     outline: none !important;
 }
 input{
-    width:315px;
-    height:100px;
+    width:74%;
+    height:20%;
 }
 #hariu{
     background:white;
